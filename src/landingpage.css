@@ -227,7 +227,34 @@ body{
         display: none;
     }
     #nav-bar{
-        display:none;
+        display:block;
+        width: 100vw;
+        height: 40px;
+        overflow: hidden;
+    }
+    #nav-bar:hover {
+        height: 260px;;
+    }
+    .top-nav-bar, .bottom-nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-link {
+        font-size: 30px;
+    }
+    .top-nav-bar:before {
+        content: 'MENÜ';
+        font-family: 'arial';
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 2px solid #000000
+    }
+    .top-underline, .bottom-underline {
+        display: none;
     }
     #video-text{
         width: 100%;
