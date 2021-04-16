@@ -18,55 +18,80 @@ body{
     
 }
 #nav-bar{
-    width:450px;
-    padding:20px;
+    width:500px;
+    padding:8px 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
-.nav-list{
-    position: relative;
-    padding: 0 5px;
+.top-nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
-#tribute:hover ~ #nav-sub-list{
-    right:315px;
-    width: 105px;
+.top-nav-bar a{
+    padding: 0 45px;
+}
+.bottom-nav-bar a{
+    padding: 0 35px;
+}
+.bottom-nav-bar{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#tribute:hover ~ .top-underline{
+    right:370px;
+    width: 85px;
     border-color: #000000;
 
 }
-#survey:hover ~ #nav-sub-list{
-    right:200px;
-    width: 90px;
+#survey:hover ~ .top-underline{
+    right:235px;
+    width: 80px;
     border-color: #000000;
 
 }
-#landingpage:hover ~ #nav-sub-list{
-    right:20px;
-    width:160px;
+#landingpage:hover ~ .top-underline{
+    right:35px;
+    width:150px;
     border-color: #000000;
     position: fixed;
 }
-.nav-link{
-    padding: 0 35px;
+#nav-content:hover ~ .bottom-underline{
+    right:390px;
+    width: 65px;
+    border-color: #000000;
+
 }
-#nav-sub-list {
+#nav-more:hover ~ .bottom-underline{
+    right:205px;
+    width: 150px;
+    border-color: #000000;
+
+}
+#nav-form:hover ~ .bottom-underline{
+    right:40px;
+    width:130px;
+    border-color: #000000;
+    position: fixed;
+}
+
+.top-underline, .bottom-underline {
     display: block;
     position: absolute;
-    top: 65px;
+    top: 45px;
     right:0px;
-    background-color: #FFFFFF;
     width: 0px;
     border: 2px solid transparent;
-    padding-left: 1px;
-    line-height: 30px;
-    height: 0px;
-    overflow: hidden;
+    height: 1px;
     transition: all .5s ease;
 }
-.nav-sub-list li {
-    list-style: none;
+.bottom-underline {
+    top: 80px
 }
-.nav-link, .nav-list {
+.nav-link{
     text-align: right;
     color:#000000;
     text-decoration: none;

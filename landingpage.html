@@ -10,23 +10,20 @@
     <header id="header">
         <img id="header-img" src="src/pics/header_black.png" alt="header">
         <nav id="nav-bar">
-            <a id="tribute" class="nav-link" href="tribute.html">Tribute</a>
-            <a id="survey" class="nav-link" href="survey.html">Űrlap</a>
-            <div id="landingpage" class="nav-link">LandingPage</div>
-            <ul id="nav-sub-list">
-                <li>
-                    <a class="nav-list" href="#">Tesztvezetés</a>
-                </li>
-                <li>
-                    <a class="nav-list" href="#content">Infó</a>
-                </li>
-                <li>
-                    <a class="nav-list" href="#more">További autók</a>
-                </li>
-                <li>
-                    <a class="nav-list" href="#form">Jelentkezés</a>
-                </li>
-            </ul>
+            <div class="top-nav-bar">
+                <a id="tribute" class="nav-link" href="tribute.html">Tribute</a>
+                <a id="survey" class="nav-link" href="survey.html">Űrlap</a>
+                <a id="landingpage" class="nav-link">LandingPage</a>
+                <div class="top-underline"></div>
+            </div>
+            <div class="bottom-nav-bar">
+                <a id="nav-content" class="nav-link" href="#content">Infó</a>
+
+                <a  id="nav-more" class="nav-link" href="#more">További autók</a>
+                <a  id="nav-form" class="nav-link" href="#form">Jelentkezés</a>
+                <div class="bottom-underline"></div>
+
+            </div>                    
         </nav>
     </header>
     <div id="video-cover">
@@ -86,22 +83,5 @@
         <a href="#">ÁFSZ</a>
         <div>Kopirájt szöveg 2021</div>
     </footer>
-
-    <script>
-        let tribute = document.getElementById('tribute');
-        let survey = document.getElementById('survey');
-        let landingpage = document.getElementById('landingpage');
-        let subList = document.getElementById('nav-sub-list');
-
-
-        landingpage.onclick = function listShow(){
-            subList.style.height = "150px";
-        };
-        
-        landingpage.onmouseout = function listReset (){
-            subList.style.height = "0px";
-        }
-        
-    </script>
 </body>
 </html>
