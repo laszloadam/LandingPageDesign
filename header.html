@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigáció</title>
+    <style>
+        #header{
+            display:flex;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            border-bottom: 2px solid #000000;
+            position: sticky;
+            position: -webkit-sticky;
+            top:0;
+            z-index: 1;
+        }
+        #nav-bar{
+            width:500px;
+            padding:8px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .top-nav-bar{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .top-nav-bar a{
+            padding: 0 45px;
+        }
+        #tribute:hover ~ .top-underline{
+            right:370px;
+            width: 85px;
+            border-color: #000000;
+
+        }
+        #survey:hover ~ .top-underline{
+            right:235px;
+            width: 80px;
+            border-color: #000000;
+
+        }
+        #landingpage:hover ~ .top-underline{
+            right:35px;
+            width:150px;
+            border-color: #000000;
+            position: fixed;
+        }
+
+        .top-underline{
+            display: block;
+            position: absolute;
+            top: 45px;
+            right:0px;
+            width: 0px;
+            border: 2px solid transparent;
+            height: 1px;
+            transition: all .5s ease;
+        }
+        .nav-link{
+            text-align: right;
+            color:#000000;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #header-img{
+            height: 100px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="src/pics/header_black.png" alt="header">
+        <nav id="nav-bar">
+            <div class="top-nav-bar">
+                <a id="tribute" class="nav-link" href="tribute.html">Tribute</a>
+                <a id="survey" class="nav-link" href="survey.html">Űrlap</a>
+                <a id="landingpage" class="nav-link">LandingPage</a>
+                <div class="top-underline"></div>
+            </div>                  
+        </nav>
+    </header>
+</body>
+</html>
