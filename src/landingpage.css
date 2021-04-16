@@ -5,6 +5,7 @@
 }
 body{
     background-image: linear-gradient(105deg,#199219 70%,#FFFFFF 30%);
+    max-width: 100vw;
 }
 #header{
     display:flex;
@@ -104,14 +105,14 @@ body{
 }
 #video-cover{
     color:#FFFFFF;
-    width: 100%;
+    width: 100vw;
     background-color: #000000;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 #video{
-    width: 100%;
+    width: 100vw;
     border:none;
 }
 #video-text{
@@ -138,7 +139,7 @@ body{
 }
 #content {
     margin: 80px 0;
-    width:100%;
+    width:100vw;
     background-size: cover;
     background-position: bottom 40% center;
     height: 500px;
@@ -222,7 +223,39 @@ body{
 }
 
 @media screen and (max-width: 700px) {
+    #header-img {
+        display: none;
+    }
+    #nav-bar{
+        display:none;
+    }
+    #video-text{
+        width: 100%;
+    }
     #cars {
         flex-direction: column;
+        padding:30px;
+        height:630px;
+    }
+    #cars div {
+        width: 310px;
+    }
+    #cars div img {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    #content {
+        display: block;
+    }
+    #content div p {
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    #content div {
+        display: block;
+        width: 100vw;
+        height: 63%;
     }
 }
