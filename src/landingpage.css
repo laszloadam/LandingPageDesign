@@ -7,7 +7,7 @@ body{
     background-image: linear-gradient(105deg,#199219 70%,#FFFFFF 30%);
     max-width: 100vw;
 }
-#checkbox-line{
+#header{
     display:flex;
     justify-content: space-between;
     background-color: #FFFFFF;
@@ -18,7 +18,7 @@ body{
     z-index: 1;
     
 }
-#cBox, #checkbox-line label {
+#cBox, #header label {
     display: none;
 }
 #nav-bar{
@@ -229,7 +229,6 @@ body{
     #header-img {
         display: none;
     }
-    
     #nav-bar {
         padding: 0;
         width: 100%;
@@ -238,12 +237,12 @@ body{
         transition: all .5s;
     }
     #cBox:checked ~ #nav-bar:last-child:last-child {
-        padding-bottom: 30px
+        padding-bottom: 15px
     }
     #cBox:checked ~ #nav-bar {
         height: 260px;
     }
-    #checkbox-line label {
+    #header label {
         display: block;
         font-family: 'arial';
         font-size: 30px;
@@ -251,7 +250,7 @@ body{
         width: 100%;
         border-bottom: 2px solid #000000
     }
-    #checkbox-line{
+    #header{
         display:block;
         width: 100vw;
         overflow: hidden;
