@@ -224,7 +224,6 @@ body{
     color: #FFFFFF;
     letter-spacing: 3px;
 }
-
 @media screen and (max-width: 700px) {
     #header-img {
         display: none;
