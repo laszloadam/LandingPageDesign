@@ -108,14 +108,14 @@ body{
 }
 #video-cover{
     color:#FFFFFF;
-    width: 100vw;
+    width: 100%;
     background-color: #000000;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 #video{
-    width: 100vw;
+    width: 100%;
     border:none;
 }
 #video-text{
@@ -142,7 +142,7 @@ body{
 }
 #content {
     margin: 80px 0;
-    width:100vw;
+    width:100%;
     background-size: cover;
     background-position: bottom 40% center;
     height: 500px;
